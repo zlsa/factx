@@ -1,0 +1,111 @@
+
+@import 'unit';
+
+.vehicle {
+  
+  padding: $unit * 2 $unit * 8;
+  
+  > header {
+
+    padding: 0 $unit * 8;
+    
+    border-bottom: 2px solid #404040;
+    
+    h1 {
+      font-size: $unit * 4;
+      color: #404040;
+    }
+    
+  }
+
+  .stack {
+    width: 100%;
+    
+    position: relative;
+    left: -$unit * 2;
+    
+    .layer, .annotation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.2s ease, margin 0.4s ease;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+
+    .annotation {
+      background-image: url('../images/annotation/dot-center.png');
+      min-width: 600px;
+      padding: 64px 0;
+
+      &.right {
+        background-image: url('../images/annotation/dot-right.png');
+      }
+      
+      &.arrow-right {
+        background-image: url('../images/annotation/arrow-right.png');
+      }
+
+      .text {
+        color: #404040;
+        font-family: Oswald, sans-serif;
+        font-size: $unit * 2;
+        position: absolute;
+        left: 360px;
+        top: 64px - $unit * 2 + 3px;
+        width: 640px;
+
+        h1, span {
+          display: inline-block;
+        }
+
+        h1 {
+          text-transform: uppercase;
+          margin-right: $unit * 2;
+        }
+
+        span {
+          color: #888;
+          transform: translateX(10);
+          opacity: 0;
+          transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        &:hover span {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+      }
+      
+    }
+
+  }
+
+  &#falcon9-v11.open .stack {
+    
+    .upper.layer {
+      margin-top: 90px;
+    }
+    
+    .payload.layer {
+
+      .left-fairing.layer {
+        margin-left: -20px;
+      }
+      
+      .right-fairing.layer {
+        margin-left: 20px;
+      }
+      
+    }
+    
+    .booster.layer {
+      margin-top: 300px;
+    }
+    
+  }
+
+}

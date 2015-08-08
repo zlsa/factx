@@ -1,0 +1,97 @@
+@import "http://fonts.googleapis.com/css?family=Oswald:400,700,300";
+* {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0; }
+
+body > header {
+  background-color: #404040;
+  color: #fff;
+  font-size: 24px;
+  padding: 8px 128px; }
+  body > header * {
+    display: inline-block; }
+  body > header h1 {
+    font-weight: bold; }
+  body > header nav ul {
+    margin-left: 64px; }
+    body > header nav ul li {
+      display: inline-block;
+      opacity: 0.6; }
+
+.vehicle {
+  padding: 16px 64px; }
+  .vehicle > header {
+    padding: 0 64px;
+    border-bottom: 2px solid #404040; }
+    .vehicle > header h1 {
+      font-size: 32px;
+      color: #404040; }
+  .vehicle .stack {
+    width: 100%;
+    position: relative;
+    left: -16px; }
+    .vehicle .stack .layer, .vehicle .stack .annotation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.2s ease, margin 0.4s ease; }
+    .vehicle .stack .hidden {
+      opacity: 0; }
+    .vehicle .stack .annotation {
+      background-image: url("../images/annotation/dot-center.png");
+      min-width: 600px;
+      padding: 64px 0; }
+      .vehicle .stack .annotation.right {
+        background-image: url("../images/annotation/dot-right.png"); }
+      .vehicle .stack .annotation.arrow-right {
+        background-image: url("../images/annotation/arrow-right.png"); }
+      .vehicle .stack .annotation .text {
+        color: #404040;
+        font-family: Oswald, sans-serif;
+        font-size: 16px;
+        position: absolute;
+        left: 360px;
+        top: 51px;
+        width: 640px; }
+        .vehicle .stack .annotation .text h1, .vehicle .stack .annotation .text span {
+          display: inline-block; }
+        .vehicle .stack .annotation .text h1 {
+          text-transform: uppercase;
+          margin-right: 16px; }
+        .vehicle .stack .annotation .text span {
+          color: #888;
+          transform: translateX(10);
+          opacity: 0;
+          transition: opacity 0.2s ease, transform 0.2s ease; }
+        .vehicle .stack .annotation .text:hover span {
+          opacity: 1;
+          transform: translateX(0); }
+  .vehicle#falcon9-v11.open .stack .upper.layer {
+    margin-top: 90px; }
+  .vehicle#falcon9-v11.open .stack .payload.layer .left-fairing.layer {
+    margin-left: -20px; }
+  .vehicle#falcon9-v11.open .stack .payload.layer .right-fairing.layer {
+    margin-left: 20px; }
+  .vehicle#falcon9-v11.open .stack .booster.layer {
+    margin-top: 300px; }
+
+header {
+  font-family: Oswald, Arial, sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

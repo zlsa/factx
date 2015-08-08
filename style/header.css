@@ -1,0 +1,16 @@
+body > header {
+  background-color: #404040;
+  color: #fff;
+  font-size: 24px;
+  padding: 8px 128px; }
+  body > header * {
+    display: inline-block; }
+  body > header h1 {
+    font-weight: bold; }
+  body > header nav ul {
+    margin-left: 64px; }
+    body > header nav ul li {
+      display: inline-block;
+      opacity: 0.6; }
+
+/*# sourceMappingURL=header.css.map */

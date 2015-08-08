@@ -1,0 +1,31 @@
+
+@import 'unit';
+
+body > header {
+  background-color: #404040;
+  color: #fff;
+  
+  font-size: $unit * 3;
+  
+  padding: $unit $unit * 16;
+
+  * {
+    display: inline-block;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  nav ul {
+
+    margin-left: $unit * 8;
+    
+    li {
+      display: inline-block;
+      opacity: 0.6;
+    }
+    
+  }
+  
+}
