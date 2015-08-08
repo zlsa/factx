@@ -12,10 +12,6 @@
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
-  -moz-user-select: none;
-  user-select: none;
   margin: 0;
   padding: 0; }
 
@@ -75,20 +71,14 @@ body > header {
           text-transform: uppercase;
           margin-right: 16px; }
         .vehicle .stack .annotation .text span {
-          color: #888;
-          transform: translateX(10);
-          opacity: 0;
-          transition: opacity 0.2s ease, transform 0.2s ease; }
-        .vehicle .stack .annotation .text:hover span {
-          opacity: 1;
-          transform: translateX(0); }
-  .vehicle#falcon9-v11.open .stack .upper.layer {
+          color: #888; }
+  .vehicle#falcon9-v11 .stack .upper.layer, .vehicle#falcon9-v11.open .stack .upper.layer {
     margin-top: 90px; }
-  .vehicle#falcon9-v11.open .stack .payload.layer .left-fairing.layer {
+  .vehicle#falcon9-v11 .stack .payload.layer .left-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .left-fairing.layer {
     margin-left: -20px; }
-  .vehicle#falcon9-v11.open .stack .payload.layer .right-fairing.layer {
+  .vehicle#falcon9-v11 .stack .payload.layer .right-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .right-fairing.layer {
     margin-left: 20px; }
-  .vehicle#falcon9-v11.open .stack .booster.layer {
+  .vehicle#falcon9-v11 .stack .booster.layer, .vehicle#falcon9-v11.open .stack .booster.layer {
     margin-top: 300px; }
 
 header {
