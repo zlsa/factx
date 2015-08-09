@@ -10,10 +10,42 @@
     padding: 0 $unit * 8;
     
     border-bottom: 2px solid #404040;
+
+    * {
+      display: inline-block;
+    }
     
     h1 {
       font-size: $unit * 4;
       color: #404040;
+    }
+
+    ul {
+      
+      margin-left: $unit * 2;
+                           
+      li {
+        color: #888;
+        
+        font-size: $unit * 2;
+        font-weight: 900;
+        
+        text-transform: uppercase;
+
+        padding: 0 $unit * 2;
+
+        a.hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        a.active {
+          color: #404040;
+          border-bottom: 4px solid #404040;
+        }
+        
+      }
+      
     }
     
   }
@@ -23,12 +55,14 @@
     
     position: relative;
     left: -$unit * 2;
+
+    pointer-events: none;
     
     .layer, .annotation {
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity 0.2s ease, margin 0.4s ease;
+      transition: opacity 0.5s ease, margin 1s ease;
     }
 
     .hidden {
@@ -79,16 +113,15 @@
 
   }
 
-  &#falcon9-v11 .stack,
   &#falcon9-v11.open .stack {
     
     .upper.layer {
       margin-top: 90px;
     }
     
-    .payload.layer {
+    > .payload.layer {
 
-      .dragon1.layer {
+      .payload.cargo-dragon.layer {
         margin-top: -50px;
 
         .nosecone.layer {
@@ -106,12 +139,30 @@
         
       }
 
-      .left-fairing.layer {
-        margin-left: -20px;
+      .payload.crew-dragon.layer {
+        margin-top: -50px;
+
+        .trunk.layer {
+          margin-top: 40px;
+          
+          .adapter.layer {
+            margin-top: 30px;
+          }
+        
+        }
+        
       }
-      
-      .right-fairing.layer {
-        margin-left: 20px;
+
+      .payload.satellite.layer {
+        
+        .left-fairing.layer {
+          margin-left: -20px;
+        }
+        
+        .right-fairing.layer {
+          margin-left: 20px;
+        }
+        
       }
       
     }

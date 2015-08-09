@@ -3,18 +3,35 @@
   .vehicle > header {
     padding: 0 64px;
     border-bottom: 2px solid #404040; }
+    .vehicle > header * {
+      display: inline-block; }
     .vehicle > header h1 {
       font-size: 32px;
       color: #404040; }
+    .vehicle > header ul {
+      margin-left: 16px; }
+      .vehicle > header ul li {
+        color: #888;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 0 16px; }
+        .vehicle > header ul li a.hidden {
+          opacity: 0;
+          pointer-events: none; }
+        .vehicle > header ul li a.active {
+          color: #404040;
+          border-bottom: 4px solid #404040; }
   .vehicle .stack {
     width: 100%;
     position: relative;
-    left: -16px; }
+    left: -16px;
+    pointer-events: none; }
     .vehicle .stack .layer, .vehicle .stack .annotation {
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity 0.2s ease, margin 0.4s ease; }
+      transition: opacity 0.5s ease, margin 1s ease; }
     .vehicle .stack .hidden {
       opacity: 0; }
     .vehicle .stack .annotation {
@@ -40,21 +57,27 @@
           margin-right: 16px; }
         .vehicle .stack .annotation .text span {
           color: #888; }
-  .vehicle#falcon9-v11 .stack .upper.layer, .vehicle#falcon9-v11.open .stack .upper.layer {
+  .vehicle#falcon9-v11.open .stack .upper.layer {
     margin-top: 90px; }
-  .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer {
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer {
     margin-top: -50px; }
-    .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .nosecone.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .nosecone.layer {
+    .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer .nosecone.layer {
       margin-top: -30px; }
-    .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .trunk.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .trunk.layer {
+    .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer .trunk.layer {
       margin-top: 40px; }
-      .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .trunk.layer .adapter.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .trunk.layer .adapter.layer {
+      .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer .trunk.layer .adapter.layer {
         margin-top: 30px; }
-  .vehicle#falcon9-v11 .stack .payload.layer .left-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .left-fairing.layer {
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.crew-dragon.layer {
+    margin-top: -50px; }
+    .vehicle#falcon9-v11.open .stack > .payload.layer .payload.crew-dragon.layer .trunk.layer {
+      margin-top: 40px; }
+      .vehicle#falcon9-v11.open .stack > .payload.layer .payload.crew-dragon.layer .trunk.layer .adapter.layer {
+        margin-top: 30px; }
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .left-fairing.layer {
     margin-left: -20px; }
-  .vehicle#falcon9-v11 .stack .payload.layer .right-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .right-fairing.layer {
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .right-fairing.layer {
     margin-left: 20px; }
-  .vehicle#falcon9-v11 .stack .booster.layer, .vehicle#falcon9-v11.open .stack .booster.layer {
+  .vehicle#falcon9-v11.open .stack .booster.layer {
     margin-top: 300px; }
 
 /*# sourceMappingURL=vehicles.css.map */

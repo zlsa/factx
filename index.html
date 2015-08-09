@@ -3,6 +3,8 @@
   <head>
     <title>FactX</title>
     <link rel="stylesheet" href="style/main.css" />
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/payload.js"></script>
   </head>
   <body>
     <header>
@@ -14,9 +16,14 @@
       </nav>
     </header>
     <main>
-      <section id="falcon9-v11" class="vehicle">
+      <section id="falcon9-v11" class="vehicle open">
         <header>
           <h1>Falcon 9 v1.1</h1>
+          <ul class="payload">
+            <li><a href="#falcon9-v11" class="set-payload" data-payload="cargo-dragon">Cargo Dragon</a></li>
+            <li><a href="#falcon9-v11" class="set-payload hidden" data-payload="crew-dragon">Crew Dragon</a></li>
+            <li><a href="#falcon9-v11" class="set-payload hidden" data-payload="satellite">Satellite</a></li>
+          </ul>
         </header>
 
         <div class="stack" tabindex="1">
@@ -28,10 +35,10 @@
           
           <div class="payload layer" style="margin-top: 0px;">
 
-            <div class="dragon1 layer">
+            <div class="payload cargo-dragon layer">
               
               <div class="capsule layer">
-                <img class="layer" src="images/vehicles/falcon9-v11/payload-dragon.png" />
+                <img class="layer" src="images/vehicles/falcon9-v11/payload-cargo-dragon.png" />
                 
                 <div class="annotations layer">
                   <div id="falcon9-v11-dragon1-capsule-annotation" class="annotation right" style="margin-top: 170px;">
@@ -42,7 +49,7 @@
               </div>
               
               <div class="trunk layer">
-                <img class="layer" src="images/vehicles/falcon9-v11/payload-dragon-trunk-panels-closed.png" />
+                <img class="layer" src="images/vehicles/falcon9-v11/payload-cargo-dragon-trunk-panels-closed.png" />
                 
                 <div class="annotations layer">
                   <div id="falcon9-v11-dragon1-trunk-annotation" class="annotation right" style="margin-top: 230px;">
@@ -51,7 +58,7 @@
                 </div>
 
                 <div class="adapter layer">
-                  <img class="layer" src="images/vehicles/falcon9-v11/payload-dragon-adapter.png" />
+                  <img class="layer" src="images/vehicles/falcon9-v11/payload-cargo-dragon-adapter.png" />
                   
                   <div class="annotations layer">
                     <div id="falcon9-v11-dragon1-adapter-annotation" class="annotation arrow-right" style="margin-top: 289px;">
@@ -64,7 +71,7 @@
               </div>
               
               <div class="nosecone layer">
-                <img class="layer" src="images/vehicles/falcon9-v11/payload-dragon-nosecone.png" />
+                <img class="layer" src="images/vehicles/falcon9-v11/payload-cargo-dragon-nosecone.png" />
                 
                 <div class="annotations layer">
                   <div id="falcon9-v11-dragon1-nosecone-annotation" class="annotation" style="margin-top: 125px;">
@@ -76,7 +83,44 @@
               
             </div>
             
-            <div class="fairing layer hidden">
+            <div class="payload crew-dragon layer hidden">
+              
+              <div class="capsule layer">
+                <img class="layer" src="images/vehicles/falcon9-v11/payload-crew-dragon.png" />
+                
+                <div class="annotations layer">
+                  <div id="falcon9-v11-crew-capsule-annotation" class="annotation right" style="margin-top: 170px;">
+                    <span class="text"> <h1>Crew Dragon Capsule</h1> <span>Supports up to seven astronauts</span></span>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="trunk layer">
+                <img class="layer" src="images/vehicles/falcon9-v11/payload-crew-dragon-trunk.png" />
+                
+                <div class="annotations layer">
+                  <div id="falcon9-v11-dragon1-trunk-annotation" class="annotation right" style="margin-top: 230px;">
+                    <span class="text"> <h1>Crew Dragon Trunk</h1> <span>Contains unpressurized cargo and solar panels</span></span>
+                  </div>
+                </div>
+
+                <div class="adapter layer">
+                  <img class="layer" src="images/vehicles/falcon9-v11/payload-crew-dragon-adapter.png" />
+                  
+                  <div class="annotations layer">
+                    <div id="falcon9-v11-dragon1-adapter-annotation" class="annotation arrow-right" style="margin-top: 289px;">
+                      <span class="text"> <h1>Crew Dragon Adapter</h1> <span>Connects Crew Dragon to the Falcon 9 upper stage</span></span>
+                    </div>
+                  </div>
+
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="payload satellite layer hidden">
               
               <div class="left-fairing layer">
                 <img class="layer" src="images/vehicles/falcon9-v11/left-fairing.png" />
