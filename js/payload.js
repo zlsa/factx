@@ -1,19 +1,25 @@
 
-function set_payload(payload) {
-  $("#falcon9-v11").removeClass("open");
-  
-  setTimeout(function() {
-    $(".stack > .payload .payload").addClass("hidden");
-  }, 400);
-  
-  setTimeout(function() {
-    $(".stack > .payload .payload." + payload).removeClass("hidden");
-  }, 600);
-  
+function set_payload(payload, inhibit_animations) {
 
-  setTimeout(function() {
+  if(inhibit_animations) {
+    $(".stack > .payload .payload").addClass("hidden");
+    $(".stack > .payload .payload." + payload).removeClass("hidden");
     $("#falcon9-v11").addClass("open");
-  }, 500);
+  } else {
+    $("#falcon9-v11").removeClass("open");
+    setTimeout(function() {
+      $(".stack > .payload .payload").addClass("hidden");
+    }, 600);
+    
+    setTimeout(function() {
+      $(".stack > .payload .payload." + payload).removeClass("hidden");
+    }, 900);
+    
+
+    setTimeout(function() {
+      $("#falcon9-v11").addClass("open");
+    }, 1000);
+  }
 
   $("a.set-payload").removeClass("active");
   $("a.set-payload[data-payload=" + payload + "]").addClass("active");
@@ -29,7 +35,7 @@ $(document).ready(function() {
     set_payload(e.attr("data-payload"));
   });
   
-  set_payload("cargo-dragon");
+  set_payload("cargo-dragon", true);
 
   $("#falcon9-v11").removeClass("open");
   setTimeout(function() {

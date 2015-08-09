@@ -118,7 +118,8 @@ html, body {
   width: 100%; }
 
 html {
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: auto; }
 
 header {
   font-family: Oswald, Arial, sans-serif; }
