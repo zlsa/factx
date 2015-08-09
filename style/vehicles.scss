@@ -37,7 +37,7 @@
 
     .annotation {
       background-image: url('../images/annotation/dot-center.png');
-      min-width: 600px;
+      min-width: 480px;
       padding: 64px 0;
 
       &.right {
@@ -87,6 +87,24 @@
     }
     
     .payload.layer {
+
+      .dragon1.layer {
+        margin-top: -50px;
+
+        .nosecone.layer {
+          margin-top: -30px;
+        }
+        
+        .trunk.layer {
+          margin-top: 40px;
+          
+          .adapter.layer {
+            margin-top: 30px;
+          }
+        
+        }
+        
+      }
 
       .left-fairing.layer {
         margin-left: -20px;

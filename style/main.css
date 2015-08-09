@@ -51,7 +51,7 @@ body > header {
       opacity: 0; }
     .vehicle .stack .annotation {
       background-image: url("../images/annotation/dot-center.png");
-      min-width: 600px;
+      min-width: 480px;
       padding: 64px 0; }
       .vehicle .stack .annotation.right {
         background-image: url("../images/annotation/dot-right.png"); }
@@ -74,6 +74,14 @@ body > header {
           color: #888; }
   .vehicle#falcon9-v11 .stack .upper.layer, .vehicle#falcon9-v11.open .stack .upper.layer {
     margin-top: 90px; }
+  .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer {
+    margin-top: -50px; }
+    .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .nosecone.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .nosecone.layer {
+      margin-top: -30px; }
+    .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .trunk.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .trunk.layer {
+      margin-top: 40px; }
+      .vehicle#falcon9-v11 .stack .payload.layer .dragon1.layer .trunk.layer .adapter.layer, .vehicle#falcon9-v11.open .stack .payload.layer .dragon1.layer .trunk.layer .adapter.layer {
+        margin-top: 30px; }
   .vehicle#falcon9-v11 .stack .payload.layer .left-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .left-fairing.layer {
     margin-left: -20px; }
   .vehicle#falcon9-v11 .stack .payload.layer .right-fairing.layer, .vehicle#falcon9-v11.open .stack .payload.layer .right-fairing.layer {
