@@ -86,7 +86,8 @@ body > header {
         position: absolute;
         left: 360px;
         top: 51px;
-        width: 640px; }
+        width: 640px;
+        pointer-events: auto; }
         .vehicle .stack .annotation .text h1, .vehicle .stack .annotation .text span {
           display: inline-block; }
         .vehicle .stack .annotation .text h1 {

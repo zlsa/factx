@@ -98,6 +98,8 @@
         top: 64px - $unit * 2 + 3px;
         width: 640px;
 
+        pointer-events: auto;
+    
         h1, span {
           display: inline-block;
         }
