@@ -11,6 +11,8 @@
     
     border-bottom: 2px solid #404040;
 
+    margin-bottom: $unit * 3;
+
     * {
       display: inline-block;
     }
@@ -173,11 +175,11 @@
         }
         
         .left-fairing.layer {
-          margin-left: -50px;
+          margin-left: -35px;
         }
         
         .right-fairing.layer {
-          margin-left: 50px;
+          margin-left: 35px;
         }
         
       }

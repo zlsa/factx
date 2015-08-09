@@ -35,7 +35,8 @@ body > header {
   padding: 16px 64px; }
   .vehicle > header {
     padding: 0 64px;
-    border-bottom: 2px solid #404040; }
+    border-bottom: 2px solid #404040;
+    margin-bottom: 24px; }
     .vehicle > header * {
       display: inline-block; }
     .vehicle > header h1 {
@@ -116,9 +117,9 @@ body > header {
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .adapter.layer {
     margin-top: 20px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .left-fairing.layer {
-    margin-left: -50px; }
+    margin-left: -35px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .right-fairing.layer {
-    margin-left: 50px; }
+    margin-left: 35px; }
   .vehicle#falcon9-v11.open .stack .booster.layer {
     margin-top: 300px; }
 
