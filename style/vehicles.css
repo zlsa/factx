@@ -57,6 +57,8 @@
           margin-right: 16px; }
         .vehicle .stack .annotation .text span {
           color: #888; }
+  .vehicle#falcon9-v11 {
+    height: 1900px; }
   .vehicle#falcon9-v11.open .stack .upper.layer {
     margin-top: 90px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer {

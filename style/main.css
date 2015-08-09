@@ -89,6 +89,8 @@ body > header {
           margin-right: 16px; }
         .vehicle .stack .annotation .text span {
           color: #888; }
+  .vehicle#falcon9-v11 {
+    height: 1900px; }
   .vehicle#falcon9-v11.open .stack .upper.layer {
     margin-top: 90px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.cargo-dragon.layer {
@@ -111,6 +113,12 @@ body > header {
     margin-left: 20px; }
   .vehicle#falcon9-v11.open .stack .booster.layer {
     margin-top: 300px; }
+
+html, body {
+  width: 100%; }
+
+html {
+  overflow: hidden; }
 
 header {
   font-family: Oswald, Arial, sans-serif; }

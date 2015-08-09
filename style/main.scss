@@ -6,6 +6,14 @@
 
 @import 'vehicles';
 
+html, body {
+  width: 100%;
+}
+
+html {
+  overflow: hidden;
+}
+
 header {
   font-family: Oswald, Arial, sans-serif;
 }

@@ -4,7 +4,7 @@
 .vehicle {
   
   padding: $unit * 2 $unit * 8;
-  
+
   > header {
 
     padding: 0 $unit * 8;
@@ -111,6 +111,10 @@
       
     }
 
+  }
+
+  &#falcon9-v11 {
+    height: 1900px;
   }
 
   &#falcon9-v11.open .stack {
