@@ -21,6 +21,8 @@ function set_payload(payload, inhibit_animations) {
     }, 1000);
   }
 
+  location.hash = payload;
+
   $("a.set-payload").removeClass("active");
   $("a.set-payload[data-payload=" + payload + "]").addClass("active");
 }
@@ -33,9 +35,13 @@ $(document).ready(function() {
     var e = $(this);
 
     set_payload(e.attr("data-payload"));
+    return false;
   });
-  
-  set_payload("cargo-dragon", true);
+
+  if(location.hash.length >= 2)
+    set_payload(location.hash.substr(1), true);
+  else
+    set_payload("cargo-dragon", true);
 
   $("#falcon9-v11").removeClass("open");
   setTimeout(function() {

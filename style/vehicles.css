@@ -31,15 +31,18 @@
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity 0.5s ease, margin 1s ease; }
+      transition: opacity 0.5s ease, transform 0.5s ease, margin 1s ease; }
     .vehicle .stack .hidden {
-      opacity: 0; }
+      opacity: 0;
+      transform: translateY(-20px); }
     .vehicle .stack .annotation {
       background-image: url("../images/annotation/dot-center.png");
       min-width: 480px;
       padding: 64px 0; }
       .vehicle .stack .annotation.right {
         background-image: url("../images/annotation/dot-right.png"); }
+      .vehicle .stack .annotation.far-right {
+        background-image: url("../images/annotation/dot-far-right.png"); }
       .vehicle .stack .annotation.arrow-right {
         background-image: url("../images/annotation/arrow-right.png"); }
       .vehicle .stack .annotation .text {
@@ -75,10 +78,14 @@
       margin-top: 40px; }
       .vehicle#falcon9-v11.open .stack > .payload.layer .payload.crew-dragon.layer .trunk.layer .adapter.layer {
         margin-top: 30px; }
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .satellite.layer {
+    margin-top: -20px; }
+  .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .adapter.layer {
+    margin-top: 20px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .left-fairing.layer {
-    margin-left: -20px; }
+    margin-left: -50px; }
   .vehicle#falcon9-v11.open .stack > .payload.layer .payload.satellite.layer .right-fairing.layer {
-    margin-left: 20px; }
+    margin-left: 50px; }
   .vehicle#falcon9-v11.open .stack .booster.layer {
     margin-top: 300px; }
 

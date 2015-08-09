@@ -62,11 +62,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity 0.5s ease, margin 1s ease;
+      transition: opacity 0.5s ease, transform 0.5s ease, margin 1s ease;
     }
 
     .hidden {
       opacity: 0;
+      transform: translateY(-20px);
     }
 
     .annotation {
@@ -76,6 +77,10 @@
 
       &.right {
         background-image: url('../images/annotation/dot-right.png');
+      }
+      
+      &.far-right {
+        background-image: url('../images/annotation/dot-far-right.png');
       }
       
       &.arrow-right {
@@ -158,13 +163,21 @@
       }
 
       .payload.satellite.layer {
+
+        .satellite.layer {
+          margin-top: -20px;
+        }
+        
+        .adapter.layer {
+          margin-top: 20px;
+        }
         
         .left-fairing.layer {
-          margin-left: -20px;
+          margin-left: -50px;
         }
         
         .right-fairing.layer {
-          margin-left: 20px;
+          margin-left: 50px;
         }
         
       }
