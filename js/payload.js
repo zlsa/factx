@@ -1,7 +1,19 @@
 
 function set_payload(payload) {
-  $(".stack > .payload .payload").addClass("hidden");
-  $(".stack > .payload .payload." + payload).removeClass("hidden");
+  $("#falcon9-v11").removeClass("open");
+  
+  setTimeout(function() {
+    $(".stack > .payload .payload").addClass("hidden");
+  }, 400);
+  
+  setTimeout(function() {
+    $(".stack > .payload .payload." + payload).removeClass("hidden");
+  }, 600);
+  
+
+  setTimeout(function() {
+    $("#falcon9-v11").addClass("open");
+  }, 500);
 
   $("a.set-payload").removeClass("active");
   $("a.set-payload[data-payload=" + payload + "]").addClass("active");
